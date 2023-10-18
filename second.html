@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Second</title>
+    <style>
+        p:hover{
+            color: red;
+            font-size: 2em;
+        }
+        .item:hover{
+            border: 2px dashed blue;
+            border-radius: 20px;
+        }
+        .fire{
+            border: 2px solid black;
+        }
+        #inicio{
+            text-shadow: 5px 2px 20px red;
+        }
+        button:first-of-type{
+            padding: 10px;
+            border-radius: 20px;
+            background-image: url(Fondo\ 1.jpg);
+            background-position: center;
+            color: white;
+            transition: transform 0.8s;
+            
+        }
+        button:hover{
+            transform: translateY(-20px) rotate(1turn);
+        }
+        button:hover + div#test{
+            display: block;
+        }
+        div#test{
+            display: none;
+        }
+    </style>
 </head>
 <body>
+    <h1 id="inicio">Test</h1>
+    <button>Registrarse</button>
+    <div class="fire test3" id="test">
+        <img src="Fondo 1.jpg" alt="">
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur, deleniti cupiditate, similique ipsam sequi aspernatur nam ipsum accusantium animi cumque veniam odio iste quod illum molestiae, aperiam est atque. Ab magnam quidem hic sed est facere eius assumenda ex libero placeat reprehenderit in, ad perferendis? Reiciendis iusto alias recusandae? Quos ipsa recusandae maiores sapiente dolor ratione sit explicabo quod eaque nemo veniam voluptates, suscipit earum culpa maxime vel corporis perspiciatis placeat nostrum! Perspiciatis officia iure cumque animi amet et quaerat at voluptatum placeat, temporibus in inventore unde similique quibusdam corporis fugiat laborum numquam harum. Quidem autem molestias ut odit.</p>
+    <img src="Fondo 1.jpg" alt="nada" width="40%">
+    <hr>
+    <br>
+    <div style="margin-left: 50px; font-size: 1.3em;">
+        <a href="http://iteso.mx">Iteso</a>
+        <a target="_blank" href="http://iteso.mx">Iteso 2</a>
+        <br>
+
+        <a href="#inicio">inicio</a>
+    </div>
+    <ul>
+        <li class="item, fire">html
+            <ol type="A" start="2">
+                <li title="primer item">item1</li>
+                <li>item2</li>
+                <li>item3</li>
+                <li>item4</li>
+            </ol>
+        </li>
+        <li class="item">css</li>
+        <li class="item">js</li>
+    </ul>
+
     
 </body>
 </html>
